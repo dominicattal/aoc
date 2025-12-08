@@ -1,9 +1,14 @@
 file = "in2.txt"
 with open(file, "r") as txt:
     G = []
+    cnt = 0
     for line in txt.readlines():
         s = line.strip()
+        for c in s:
+            if c == '^':
+                cnt += 1
         G.append(s)
+    print(cnt)
     for i in range(len(G)):
         if G[0][i] == 'S':
             break
