@@ -45,7 +45,7 @@ with open(file, "r") as txt:
                 return False
         return True
     for i in range(len(S)):
-        print(i)
+        #print(i)
         x1,y1 = S[i]
         for j in range(i):
             x2,y2 = S[j]
